@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatToEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What should i eat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vb-YS-0nC">
+                                <rect key="frame" x="0.0" y="73" width="414" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1ur-4p-C69"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forksppoon.png" translatesAutoresizingMaskIntoConstraints="NO" id="HHb-Er-nAQ">
+                                <rect key="frame" x="87" y="181" width="240" height="219"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYF-fN-w3p">
+                                <rect key="frame" x="144" y="548" width="126" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sRF-LD-DMf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Fast Food"/>
+                                <connections>
+                                    <action selector="findRandomFastFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kg5-Cr-pfn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tD-64-U6T">
+                                <rect key="frame" x="144" y="601" width="126" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2IT-Nu-7Ct"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Restaurant"/>
+                                <connections>
+                                    <action selector="findRandomRestaurant:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AZ9-bx-eAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSp-i1-Z2e">
+                                <rect key="frame" x="144" y="669" width="126" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="EGM-GH-O5o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Either"/>
+                                <connections>
+                                    <action selector="findRandomFromAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfG-do-iWr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose randomly from:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMj-Pk-YOX">
+                                <rect key="frame" x="76" y="421" width="262" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="F6W-zf-op4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.82366846284891937" blue="0.72907555216845821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UYF-fN-w3p" firstAttribute="trailing" secondItem="3tD-64-U6T" secondAttribute="trailing" id="0Wl-51-UGK"/>
+                            <constraint firstItem="3tD-64-U6T" firstAttribute="trailing" secondItem="tSp-i1-Z2e" secondAttribute="trailing" id="1eT-b4-7Da"/>
+                            <constraint firstItem="0Vb-YS-0nC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4lh-lb-eRC"/>
+                            <constraint firstItem="JMj-Pk-YOX" firstAttribute="top" secondItem="HHb-Er-nAQ" secondAttribute="bottom" constant="21" id="5Lx-VO-K1B"/>
+                            <constraint firstItem="HHb-Er-nAQ" firstAttribute="centerX" secondItem="JMj-Pk-YOX" secondAttribute="centerX" id="6BN-Kt-CDv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tSp-i1-Z2e" secondAttribute="bottom" constant="148" id="8eu-oy-Bkg"/>
+                            <constraint firstItem="HHb-Er-nAQ" firstAttribute="top" secondItem="0Vb-YS-0nC" secondAttribute="bottom" constant="8" symbolic="YES" id="Dgx-e3-G52"/>
+                            <constraint firstItem="3tD-64-U6T" firstAttribute="top" secondItem="UYF-fN-w3p" secondAttribute="bottom" constant="23" id="FVA-mw-NHz"/>
+                            <constraint firstItem="0Vb-YS-0nC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="UST-lO-PVt"/>
+                            <constraint firstItem="0Vb-YS-0nC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cxO-VK-wi2"/>
+                            <constraint firstItem="JMj-Pk-YOX" firstAttribute="centerX" secondItem="UYF-fN-w3p" secondAttribute="centerX" id="f3Q-wi-7kd"/>
+                            <constraint firstItem="tSp-i1-Z2e" firstAttribute="top" secondItem="3tD-64-U6T" secondAttribute="bottom" constant="23" id="ffQ-Aa-mKb"/>
+                            <constraint firstItem="UYF-fN-w3p" firstAttribute="leading" secondItem="3tD-64-U6T" secondAttribute="leading" id="iUg-MN-Sh6"/>
+                            <constraint firstItem="UYF-fN-w3p" firstAttribute="top" secondItem="JMj-Pk-YOX" secondAttribute="bottom" constant="27" id="ke6-gH-QO1"/>
+                            <constraint firstItem="HHb-Er-nAQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="pm0-jW-6fS"/>
+                            <constraint firstItem="0Vb-YS-0nC" firstAttribute="centerX" secondItem="HHb-Er-nAQ" secondAttribute="centerX" id="ss2-W0-feG"/>
+                            <constraint firstItem="3tD-64-U6T" firstAttribute="leading" secondItem="tSp-i1-Z2e" secondAttribute="leading" id="vqU-7m-34L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="foodplaceImage" destination="HHb-Er-nAQ" id="rKU-gp-2zh"/>
+                        <outlet property="foodplaceLabel" destination="0Vb-YS-0nC" id="nzC-sf-DFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="forksppoon.png" width="225" height="225"/>
+    </resources>
+</document>
